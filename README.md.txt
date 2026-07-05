@@ -1,30 +1,34 @@
-# 🛒 E-Commerce Customer Sales Analytics
+# E-Commerce Customer Sales Analytics
 
-## About the Project
+An end-to-end Data Analytics project built using **Python, MySQL, and Power BI** to analyze online retail transactions and generate actionable business insights.
 
-This project analyzes an online retail dataset containing over 500,000 transactions. The goal was to clean the raw data, perform exploratory analysis, identify valuable customer segments using RFM analysis, store the cleaned data in MySQL, and build an interactive Power BI dashboard to present business insights.
-
-I built this project to practice the complete data analytics workflow—from raw data to an interactive business dashboard.
+This project covers the complete analytics workflow, including data cleaning, exploratory data analysis (EDA), customer segmentation using RFM analysis, SQL-based business reporting, and an interactive Power BI dashboard.
 
 ---
 
-## Problem Statement
+## Project Objective
 
-Retail businesses generate large amounts of transactional data, but raw data alone doesn't provide useful insights.
-
-This project answers questions such as:
-
-* Which countries generate the highest revenue?
-* Which products contribute the most sales?
-* Who are the most valuable customers?
-* How does revenue change over time?
-* Which customers are at risk of not returning?
+The objective of this project was to transform raw e-commerce transaction data into meaningful business insights. The analysis focuses on understanding customer purchasing behavior, identifying top-performing products, tracking revenue trends, and segmenting customers based on their buying patterns.
 
 ---
 
-## Tools Used
+## Dataset
 
-* Python (Pandas, NumPy, Matplotlib, Seaborn)
+* **Dataset:** Online Retail II
+* **Transactions after cleaning:** **505,193**
+* **Data Period:** December 2009 – December 2010
+
+> The original dataset is not included in this repository due to its size.
+
+---
+
+## Tools & Technologies
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
 * MySQL
 * Power BI
 * Jupyter Notebook
@@ -35,39 +39,35 @@ This project answers questions such as:
 
 ### Data Cleaning
 
-The original dataset contained duplicate records, cancelled orders, missing values, and invalid transactions.
+The raw dataset was cleaned using Python by:
 
-Cleaning included:
-
-* Removing duplicate rows
+* Removing duplicate records
 * Handling missing values
-* Removing cancelled invoices
-* Removing records with negative quantity or price
-* Creating a Revenue column
+* Removing cancelled transactions
+* Filtering invalid quantities and prices
+* Creating a Revenue column for sales analysis
 
-The cleaned dataset contains **505,913 transactions**.
+The cleaned dataset was then used throughout the project.
 
 ---
 
 ### Exploratory Data Analysis
 
-Python was used to understand sales patterns and customer behaviour through visualizations.
+EDA was performed to understand sales patterns and customer behavior.
 
-Some of the analyses included:
+Some of the key analyses include:
 
-* Monthly revenue trend
-* Country-wise sales
-* Product performance
-* Revenue distribution
-* Customer purchase behaviour
+* Monthly Revenue Trend
+* Revenue by Country
+* Top Selling Products
+* Revenue Distribution
+* Customer Purchase Behaviour
 
 ---
 
-### Customer Segmentation
+### Customer Segmentation (RFM Analysis)
 
-RFM (Recency, Frequency and Monetary) analysis was performed to classify customers into different business segments.
-
-Segments include:
+Customers were segmented using **Recency, Frequency and Monetary (RFM)** analysis into the following groups:
 
 * Champions
 * Loyal Customers
@@ -75,70 +75,88 @@ Segments include:
 * At Risk
 * Others
 
-This helps businesses target customers with different marketing strategies.
+This segmentation helps identify high-value customers and customers who may require retention strategies.
 
 ---
 
 ### SQL Analysis
 
-The cleaned dataset was imported into MySQL.
+The cleaned dataset was imported into MySQL, where SQL queries were used to analyze:
 
-SQL queries were written to analyse:
-
-* Revenue
-* Orders
-* Products
-* Customers
-* Countries
-* Monthly sales
+* Total Revenue
+* Total Orders
+* Monthly Sales
+* Country-wise Revenue
+* Top Products
+* Top Customers
+* Average Order Value
+* Customer Spending Patterns
 
 ---
 
 ### Power BI Dashboard
 
-An interactive dashboard was developed with:
+An interactive dashboard was created to present the analysis.
 
-* KPI Cards
+The dashboard includes:
+
+* Total Revenue
+* Total Orders
+* Total Customers
+* Products Sold
+* Average Order Value
 * Monthly Revenue Trend
 * Revenue by Country
-* Top Products
-* Top Customers
-* Revenue Distribution
-* Country Filter
-* Date Filter
+* Top Products by Revenue
+* Top Customers by Revenue
+* Country and Date Slicers
 
 ---
 
 ## Key Insights
 
-* The United Kingdom generated the majority of total revenue.
-* A small percentage of customers contributed a large share of sales.
-* Revenue increased significantly during the holiday season.
-* A few products consistently generated the highest revenue.
-* RFM analysis identified both high-value and at-risk customers.
+* The United Kingdom generated the highest revenue.
+* A small group of customers contributed a significant share of total sales.
+* Revenue showed noticeable seasonal trends throughout the year.
+* RFM analysis identified valuable customer segments as well as customers at risk of churn.
 
 ---
 
-## Folder Structure
+## Repository Structure
 
 ```
-Dataset/
-Python/
-SQL/
-PowerBI/
-Dashboard_Images/
-README.md
-requirements.txt
+Ecommerce_Customer_Sales_Analytics/
+│
+├── Dataset/
+├── Python/
+├── SQL/
+├── PowerBI/
+├── Dashboard_Images/
+├── README.md
+└── requirements.txt
 ```
 
 ---
 
-## Future Improvements
+## Dashboard Preview
 
-* Sales forecasting
-* Customer churn prediction
-* Product recommendation system
-* Deploy the dashboard online
+Add a screenshot of your Power BI dashboard in the `Dashboard_Images` folder and display it here.
+
+```markdown
+![Dashboard](Dashboard_Images/dashboard.png)
+```
+
+---
+
+## Skills Demonstrated
+
+* Data Cleaning & Preprocessing
+* Exploratory Data Analysis
+* SQL Querying
+* Customer Segmentation (RFM)
+* Data Visualization
+* Business Dashboard Development
+* Business Insight Generation
 
 ---
 
@@ -146,4 +164,4 @@ requirements.txt
 
 **Ananya Rawat**
 
-This project was developed as part of my Data Analytics portfolio to strengthen my skills in Python, SQL and Power BI.
+M.Sc. Data Science Student | Aspiring Data Analyst
