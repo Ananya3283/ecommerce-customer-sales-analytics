@@ -15,7 +15,7 @@ The objective of this project was to transform raw e-commerce transaction data i
 ## Dataset
 
 * **Dataset:** Online Retail II
-* **Transactions after cleaning:** **505,193**
+* **Transactions after cleaning:** **502,416**
 * **Data Period:** December 2009 – December 2010
 
 > The raw dataset is not included because of its size. The cleaned file (`online_retail_cleaned.csv`) is.
@@ -43,9 +43,12 @@ The raw dataset was cleaned using Python by:
 
 * Removing duplicate records
 * Handling missing values
-* Removing cancelled transactions
-* Filtering invalid quantities and prices
+* Removing cancelled transactions and returns (negative quantities)
+* Removing rows with a zero or negative price
+* Removing non-product lines (postage, manual adjustments, marketplace fees, bank charges, discounts, samples, test items and gift vouchers), so they don't show up as "top products"
 * Creating a Revenue column for sales analysis
+
+525,461 raw rows → 502,416 clean transactions, £9.80M revenue, 20,573 orders, 4,285 customers.
 
 The cleaned dataset was then used throughout the project.
 
@@ -115,8 +118,9 @@ The dashboard includes:
 
 ## Key Insights
 
-* The United Kingdom generated the highest revenue.
-* A small group of customers contributed a significant share of total sales.
+* The United Kingdom generated about 86% of revenue (£8.45M).
+* The top products were the Regency Cakestand 3 Tier (£170K) and the White Hanging Heart T-Light Holder (£160K).
+* A small group of customers drove most of the sales: Champions are 21% of customers but generated £5.63M, about 57% of revenue.
 * Revenue showed noticeable seasonal trends throughout the year.
 * RFM analysis identified valuable customer segments as well as customers at risk of churn.
 
@@ -163,4 +167,4 @@ ecommerce-customer-sales-analytics/
 **Ananya Rawat**
 
 M.Sc. Data Science | Aspiring Data Analyst
-[LinkedIn](https://www.linkedin.com/in/ananya-rawat-962290447/) · [GitHub](https://github.com/Ananya3283)
+[LinkedIn](https://www.linkedin.com/in/ananyarawat-data/) · [GitHub](https://github.com/Ananya3283)
