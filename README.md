@@ -20,7 +20,7 @@ The objective of this project was to transform raw e-commerce transaction data i
 * **Transactions after cleaning:** **502,416**
 * **Data Period:** December 2009 – December 2010
 
-> The raw dataset is not included because of its size. The cleaned file (`online_retail_cleaned.csv`) is.
+> Both are included: the raw `online_retail_II.xlsx` and the cleaned `online_retail_cleaned.csv`, plus the RFM output `customer_rfm.csv`.
 
 ---
 
@@ -140,7 +140,10 @@ ecommerce-customer-sales-analytics/
 ├── analysis.sql                     # business SQL queries
 ├── ecommerce_sales_dashboard.pbix   # Power BI dashboard
 ├── Dashboard.png                    # dashboard screenshot
+├── online_retail_II.xlsx            # raw dataset (Online Retail II, UCI)
 ├── online_retail_cleaned.csv        # cleaned dataset
+├── customer_rfm.csv                 # RFM scores and segment per customer
+├── web/                             # interactive web dashboard (React + TypeScript + Vite)
 └── requirements.txt
 ```
 
