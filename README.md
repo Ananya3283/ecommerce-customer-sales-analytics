@@ -1,5 +1,7 @@
 # E-Commerce Customer Sales Analytics
 
+**Live dashboard:** [ananya3283.github.io/ecommerce-customer-sales-analytics](https://ananya3283.github.io/ecommerce-customer-sales-analytics/), an interactive version of this analysis. Pick a country to see its revenue trend, RFM segments, top products and order timing. Every figure comes from `online_retail_cleaned.csv` (`web/scripts/build_data.py` reuses the notebook's RFM rules): GBP 9.80M revenue, 20,573 orders, 4,285 customers, and Champions at 21% of customers bring in 57% of revenue.
+
 An end-to-end Data Analytics project built using **Python, MySQL, and Power BI** to analyze online retail transactions and generate actionable business insights.
 
 This project covers the complete analytics workflow, including data cleaning, exploratory data analysis (EDA), customer segmentation using RFM analysis, SQL-based business reporting, and an interactive Power BI dashboard.
@@ -168,3 +170,6 @@ ecommerce-customer-sales-analytics/
 
 M.Sc. Data Science | Aspiring Data Analyst
 [LinkedIn](https://www.linkedin.com/in/ananyarawat-data/) · [GitHub](https://github.com/Ananya3283)
+
+## Web version
+`web/` is a React + TypeScript + Vite app (Tailwind, Recharts, Motion), deployed to GitHub Pages by `.github/workflows/pages.yml`. Rebuild the data with `python web/scripts/build_data.py`, then `cd web && npm install && npm run dev`.
